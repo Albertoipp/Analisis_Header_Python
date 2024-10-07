@@ -3,11 +3,11 @@ import subprocess
 import requests
 
 # Leer el archivo Excel
-file_path = r"C:\Users\yalbe\OneDrive\Escritorio\Analisis\HeadersPRHGE.xlsx"
+file_path = r"Direccion de ubicacion donde se encuentra el archivo Excel"
 df = pd.read_excel(file_path)
 
 # Leer las URLs que están en la columna llamada 'URL'
-urls = df['URL'].tolist()
+urls = df['Nombre de la columna a revisar'].tolist()
 
 # Función para generar recomendaciones basadas en OWASP
 def generar_recomendaciones(header):
